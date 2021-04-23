@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Google Results Page</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
     </head>
+
     <body>
+        <!-- 
+            google logo; search bar; apps icon, sign-in;
+            nav tabs: All, News, Video, Maps, Shopping, more, __, Settings, Tools;
+            break;
+            search stats;
+            search results:
+             - url > path? cache option,
+             title,
+             description;
+            People also ask; 
+            faq [expandable]
+            Related searches
+            Page numbers
+            footer
 
-        <h1>This is a heading</h1>
-        <p>This is a paragraph.</p>
+        -->
+        <header>
+            <ul class="nav-bar">
+                <li id="g-logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </li>
+                <li id="search-bar">
+                    <input id="search-box" type="search">
+                    <i id="magnifying-glass" class="material-icons-outlined">search</i>
+                </li>
+                <li id="apps-link">
+                    <a class="nav-links" href="#" id="apps-icon">
+                        <i class="material-icons-outlined">apps</i>
+                    </a>
+                </li>
+                <li id="sign-in-link">
+                    <a class="nav-links" href="#" id="sign-in">Sign in</a>
+                </li>
+            </ul>
+        </header>
+           
+        <nav>
+            <ul class="nav-bar">
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id=tabs-search-icon" class="material-icons-outlined">search</i>All
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id="news-icon" class="material-icons-outlined">article</article></i>News
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id="video-icon" class="material-icons-outlined">slideshow</i>Video
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id="map-icon" class="material-icons-outlined">place</i>Maps
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id="shopping-icon" class="material-icons-outlined">sell</i>Shopping
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">
+                        <i id="more-icon" class="material-icons-outlined">more_vert</i>More
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">Settings</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">Tools</a>
+                </li>
+            </ul> 
+        </nav>
+        <div id="performance-info">
+            About 108,000,000 results (0.47 seconds) 
+        </div>
+        <main>
+            <ul class="results-list">
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous 
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="result-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>
+                <li class="result">
+                    <a class=result-link href="#">
+                        <div class="result-url">
+                            https://urlius.maximus.io › pathius/continuous
+                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                        </div>
+                        <div class="result-title">
+                            Pagium Titelius
+                        </div>
+                    </a>
+                    <div class="page-description">
+                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    </div>
+                </li>                
+            </ul>
+            
 
+            </section>
+        </main>
+        
+    <footer>
+        <nav>
+            <ul class="nav-bar">
+                <li><a class="nav-item" href="#" id="advertising">Advertising</a></li>
+                <li><a class="nav-item" href="#" id="business">Business</a></li>
+                <li><a class="nav-item" href="#" id="how-search-works">How Search Works</a></li>
+            </ul>
+            <ul class="nav-bar">
+                <li><a class="nav-item" href="#" id="privacy">Privacy</a></li>
+                <li><a class="nav-item" href="#" id="terms">Terms</a></li>
+                <li><a class="nav-item" href="#" id="settings">Settings</a></li>
+            </ul>
+        </nav>
+    </footer>
     </body>
 </html> 

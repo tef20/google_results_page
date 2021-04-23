@@ -1,3 +1,37 @@
-h1 {
-    color: blue;
+:root {
+    --header-font-col: rgb(73, 63, 63);
+    --layer1-col: rgb(255, 255, 255);
+    --layer2-col: rgb(243, 240, 240);
 }
+
+body {
+    /* height: 100%;
+    width: 1000px; */
+    font-family:"Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.nav-item {
+    color: var(--header-font-col);
+    text-decoration: none;
+    /* margin: 10px; */
+}
+
+/* when nav page == current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+  }
