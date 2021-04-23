@@ -1,2 +1,4 @@
 # google_results_page
-hard-coded version of a google results page
+
+Hard-coded version of a google results page.  
+View at: https://tef20.github.io/google_homepage/
