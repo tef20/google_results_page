@@ -271,4 +271,8 @@ footer {
     flex-direction: row;
 }
 
+.nav-item.footer-item {
+    display: inline-block;
+    margin-right: 20px;
+}
 
