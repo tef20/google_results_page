@@ -3,39 +3,34 @@
     <head>
         <title>Google Results Page</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 
     </head>
 
     <body>
         <!-- 
-            google logo; search bar; apps icon, sign-in;
-            nav tabs: All, News, Video, Maps, Shopping, more, __, Settings, Tools;
-            break;
-            search stats;
-            search results:
-             - url > path? cache option,
-             title,
-             description;
-            People also ask; 
-            faq [expandable]
-            Related searches
-            Page numbers
-            footer
-
+            Consider adding:
+             - People also ask; 
+             - faq [expandable]
+             - Related searches
+             - Pagination google characters
         -->
         <header>
-            <ul class="nav-bar">
+            <ul class="header-bar">
                 <li id="g-logo">
-                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                    <img id="g-logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google log">
                 </li>
                 <li id="search-bar">
-                    <input id="search-box" type="search">
-                    <i id="magnifying-glass" class="material-icons-outlined">search</i>
+                    <input id="search-box" type="text" value="build this webpage">
+                    <i id="magnifying-glass" class="material-icons-outlined icons">search</i>
                 </li>
+                <div id="header-spacer">
+                    
+                </div>
                 <li id="apps-link">
                     <a class="nav-links" href="#" id="apps-icon">
-                        <i class="material-icons-outlined">apps</i>
+                        <i class="material-icons-outlined icons">apps</i>
                     </a>
                 </li>
                 <li id="sign-in-link">
@@ -45,209 +40,234 @@
         </header>
            
         <nav>
-            <ul class="nav-bar">
-                <li>
+            <ul class="nav-bar tabs">
+                <li class="tab active">
                     <a class="nav-item" href="#">
-                        <i id=tabs-search-icon" class="material-icons-outlined">search</i>All
+                        <i id="tabs-search-icon" class="material-icons-outlined icons">search</i>All
                     </a>
                 </li>
-                <li>
+                <li class="tab">
                     <a class="nav-item" href="#">
-                        <i id="news-icon" class="material-icons-outlined">article</article></i>News
+                        <i id="news-icon" class="material-icons-outlined icons">article</i>News
                     </a>
                 </li>
-                <li>
+                <li class="tab">
                     <a class="nav-item" href="#">
-                        <i id="video-icon" class="material-icons-outlined">slideshow</i>Video
+                        <i id="video-icon" class="material-icons-outlined icons">slideshow</i>Video
                     </a>
                 </li>
-                <li>
+                <li class="tab">
                     <a class="nav-item" href="#">
-                        <i id="map-icon" class="material-icons-outlined">place</i>Maps
+                        <i id="map-icon" class="material-icons-outlined icons">place</i>Maps
                     </a>
                 </li>
-                <li>
+                <li class="tab">
                     <a class="nav-item" href="#">
-                        <i id="shopping-icon" class="material-icons-outlined">sell</i>Shopping
+                        <i id="shopping-icon" class="material-icons-outlined icons">sell</i>Shopping
                     </a>
                 </li>
-                <li>
+                <li class="tab">
                     <a class="nav-item" href="#">
-                        <i id="more-icon" class="material-icons-outlined">more_vert</i>More
+                        <i id="more-icon" class="material-icons-outlined icons">more_vert</i>More
                     </a>
                 </li>
-                <li>
-                    <a class="nav-item" href="#">Settings</a>
+                <li class="tab further-options">
+                    <li class="tab">
+                        <a class="nav-item" href="#">Settings</a>
+                    </li>
+                    <li class="tab further-options">
+                        <a class="nav-item" href="#">Tools</a>
+                    </li> 
                 </li>
-                <li>
-                    <a class="nav-item" href="#">Tools</a>
-                </li>
+             
             </ul> 
         </nav>
-        <div id="performance-info">
-            About 108,000,000 results (0.47 seconds) 
-        </div>
         <main>
-            <ul class="results-list">
-                <li class="result">
+            <div id="performance-info">
+                About 108,000,000 results (0.47 seconds) 
+            </div>
+            <ul class="result-list">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous 
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="result-description">
-                        Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
+                    <div class="result-snippet">
+                        You can use an online service to create web pages, or build it offline using a desktop software tool. Or, if you're a coding dynamo, use a plain text editor to create a
+                        <!-- Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ... -->
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>
-                <li class="result">
+                <li class="result-entry">
                     <a class=result-link href="#">
                         <div class="result-url">
                             https://urlius.maximus.io › pathius/continuous
-                            <i id="drop-icon" class="material-icons-outlined">arrow_drop_down</i>
+                            <i class="material-icons-outlined icons drop-icon">arrow_drop_down</i>
                         </div>
                         <div class="result-title">
                             Pagium Titelius
                         </div>
                     </a>
-                    <div class="page-description">
+                    <div class="result-snippet">
                         Descriptio pagium dolor sit amet, consectetur adipiscing elit. Suspendisse euismod et diam sit amet euismod. Donec eu metus non elit gravida ...
                     </div>
                 </li>                
             </ul>
+            <div class="pagination">
+                <a class="page-num" id="page1" href="#">1</a>
+                <a class="page-num" id="page2" href="#">2</a>
+                <a class="page-num" id="page3" href="#">3</a>
+                <a class="page-num" id="page4" href="#">4</a>
+                <a class="page-num" id="page5" href="#">5</a>
+                <a class="page-num" id="page6" href="#">6</a>
+                <a class="page-num" id="page7" href="#">7</a>
+                <a class="page-num" id="page8" href="#">8</a>
+                <a class="page-num" id="page9" href="#">9</a>
+                <a class="page-num" id="page10" href="#">10</a>
+                <a class="page-num" id="pageNext" href="#">Next</a>
+            </div>
             
-
-            </section>
         </main>
         
     <footer>
-        <nav>
-            <ul class="nav-bar">
-                <li><a class="nav-item" href="#" id="advertising">Advertising</a></li>
-                <li><a class="nav-item" href="#" id="business">Business</a></li>
-                <li><a class="nav-item" href="#" id="how-search-works">How Search Works</a></li>
-            </ul>
-            <ul class="nav-bar">
-                <li><a class="nav-item" href="#" id="privacy">Privacy</a></li>
-                <li><a class="nav-item" href="#" id="terms">Terms</a></li>
-                <li><a class="nav-item" href="#" id="settings">Settings</a></li>
-            </ul>
-        </nav>
+        <div id="footer-content">
+            
+            <div id="user-location">
+                <div id="user-country">
+                    User's Country 
+                </div>
+                <div id="user-city">
+                    <span class="material-icons icons">
+                        circle
+                    </span><span id="city">User's City</span> - From your Internet address - Use precise location - <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+            <nav id="footer-items">
+                <ul id="footer-bar" class="nav-bar">
+                    <li><a class="nav-item" href="#" id="help">Help</a></li>
+                    <li><a class="nav-item" href="#" id="feedback">Feedback</a></li>
+                    <li><a class="nav-item" href="#" id="privacy">Privacy</a></li>
+                    <li><a class="nav-item" href="#" id="terms">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     </body>
 </html> 
